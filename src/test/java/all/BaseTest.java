@@ -51,9 +51,9 @@ public class BaseTest {
         if (m.isAnnotationPresent(TestRails.class)) {
             TestRails ta = m.getAnnotation(TestRails.class);
 
-            APIClient client = new APIClient("https://chaitanya1992.testrail.io/");
-            client.setUser("chetanya1992@gmail.com");
-            client.setPassword("Chaitanya1992");
+            APIClient client = new APIClient(ApplicationProperties.INSTANCE.getBaseUrl());
+            client.setUser(ApplicationProperties.INSTANCE.getUserName());
+            client.setPassword(ApplicationProperties.INSTANCE.getPassword());
 
             if (ta.caseId() != 0)
             {

@@ -32,7 +32,7 @@ import java.net.URL;
         import java.io.BufferedWriter;
         import java.util.Base64;
 
-import Models.People;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.path.json.JsonPath;
 import org.apache.http.HttpStatus;
@@ -360,23 +360,23 @@ public class APIClient
 
         }
 
-        @Test
-        public void getPeopleAsModel() throws JsonProcessingException {
-            People people = when().
-                    request("GET","/people/1").
-                    then().
-                    assertThat().
-                    statusCode(HttpStatus.SC_OK).
-                    extract().
-                    as(People.class);
-
-    //        String name = people.getName();
-    //
-    //        assertThat(name,is(notNullValue()));
-    //        assertThat(name,containsString("Luke Skywalker"));
-            //more asserts here
-
-        }
+//        @Test
+//        public void getPeopleAsModel() throws JsonProcessingException {
+//            People people = when().
+//                    request("GET","/people/1").
+//                    then().
+//                    assertThat().
+//                    statusCode(HttpStatus.SC_OK).
+//                    extract().
+//                    as(People.class);
+//
+//    //        String name = people.getName();
+//    //
+//    //        assertThat(name,is(notNullValue()));
+//    //        assertThat(name,containsString("Luke Skywalker"));
+//            //more asserts here
+//
+//        }
 
     }
 

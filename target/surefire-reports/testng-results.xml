@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test" duration-ms="12548" started-at="2019-12-04T11:06:34 IST" finished-at="2019-12-04T11:06:47 IST">
+    <groups>
+      <group name="ch">
+        <method signature="StarwarPersonTests.getPeopleAsJson()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="getPeopleAsJson" class="all.StarwarPersonTests"/>
+        <method signature="StarwarPersonTests.getPeopleTest()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="getPeopleTest" class="all.StarwarPersonTests"/>
+      </group> <!-- ch -->
+    </groups>
+    <test name="test" duration-ms="12548" started-at="2019-12-04T11:06:34 IST" finished-at="2019-12-04T11:06:47 IST">
+      <class name="all.StarwarPersonTests">
+        <test-method status="PASS" signature="createSuite()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="createSuite" is-config="true" duration-ms="468" started-at="2019-12-04T11:06:34 IST" finished-at="2019-12-04T11:06:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSuite -->
+        <test-method status="PASS" signature="getPeopleAsJson()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="getPeopleAsJson" duration-ms="5736" started-at="2019-12-04T11:06:34 IST" finished-at="2019-12-04T11:06:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPeopleAsJson -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult, org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:all.StarwarPersonTests@490ab905]" name="afterTest" is-config="true" duration-ms="2767" started-at="2019-12-04T11:06:40 IST" finished-at="2019-12-04T11:06:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getPeopleAsJson status=SUCCESS method=StarwarPersonTests.getPeopleAsJson()[pri:0, instance:all.StarwarPersonTests@490ab905] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@35293c05]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void all.StarwarPersonTests.getPeopleAsJson() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="getPeopleTest()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="getPeopleTest" duration-ms="3220" started-at="2019-12-04T11:06:43 IST" finished-at="2019-12-04T11:06:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPeopleTest -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult, org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:all.StarwarPersonTests@490ab905]" name="afterTest" is-config="true" duration-ms="792" started-at="2019-12-04T11:06:46 IST" finished-at="2019-12-04T11:06:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getPeopleTest status=SUCCESS method=StarwarPersonTests.getPeopleTest()[pri:0, instance:all.StarwarPersonTests@490ab905] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@35293c05]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void all.StarwarPersonTests.getPeopleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:all.StarwarPersonTests@490ab905]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-12-04T11:06:47 IST" finished-at="2019-12-04T11:06:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- all.StarwarPersonTests -->
+    </test> <!-- test -->
+  </suite> <!-- test -->
+</testng-results>

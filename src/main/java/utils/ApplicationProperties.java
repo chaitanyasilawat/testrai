@@ -25,11 +25,17 @@ public enum ApplicationProperties {
         return Integer.parseInt(properties.getProperty("port"));
     }
 
-    public int getRunId() {
-        {
-            return Integer.parseInt(properties.getProperty("runId"));
-        }
+    public int getRunId() { return Integer.parseInt(properties.getProperty("runId")); }
 
-
+    public String getTestrailUrl() {
+        return properties.getProperty("testrailUrl");
     }
+
+    public String getUserName() {
+        return properties.getProperty("userName");
+    }
+
+    public String getPassword() { return properties.getProperty("password"); }
+
+
 }

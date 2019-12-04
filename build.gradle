@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id  'maven'
 }
 
 group 'com'
@@ -30,8 +31,30 @@ dependencies {
     compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
 
 }
+def suite1=project.hasProperty("suite1")
 
-test {
-    useTestNG()
+
+task runTests(type: Test) {
+    useTestNG() {
+        if (project.hasProperty("suite1")) {
+            suites = '/Users/machd/Work/testrai/src/test/testng.xml'
+        }
+    }
     maxHeapSize  = '1G'
+}
+task writeNewPom {
+    doLast {
+        pom {
+            project {
+                inceptionYear '2014'
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        distribution 'repo'
+                    }
+                }
+            }
+        }.writeTo("pom.xml")
+    }
 }
